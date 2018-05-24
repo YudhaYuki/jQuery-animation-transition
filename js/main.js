@@ -117,7 +117,9 @@ $(document).ready(function() {
             height: "50px",
             fontSize: "7px",
             opacity: "0.2"
-        }, 2000)
+        }, 2000, 'easeOutBounce', function() {
+            console.log('DONE');
+        })
     });
 
 
