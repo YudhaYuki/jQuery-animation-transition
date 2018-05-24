@@ -92,12 +92,33 @@ $(document).ready(function() {
     })
     */
 
+    /*
+    $('.slideDown, .slideUp').click(function() {
+        $('.element').slideToggle(2000, function() {
+            console.log('Transition done !');
+        });
+    })
+    */
 
-   $('.slideDown, .slideUp').click(function() {
-    $('.element').slideToggle(2000, function() {
-        console.log('Transition done !');
+
+
+
+
+
+
+
+
+    // -------- COSTUM ANIMATION  ----------------------------------
+    $(document).click(function() {
+        $('.element').animate({
+            left: "200px",
+            top: "50px",
+            width: "50px",
+            height: "50px",
+            fontSize: "7px",
+            opacity: "0.2"
+        }, 2000)
     });
-})
 
 
 
