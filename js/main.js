@@ -109,6 +109,7 @@ $(document).ready(function() {
 
 
     // -------- COSTUM ANIMATION  ----------------------------------
+    /*
     $(document).click(function() {
         $('.element').animate({
             left: "200px",
@@ -121,6 +122,22 @@ $(document).ready(function() {
             console.log('DONE');
         })
     });
+    */
+
+
+
+
+
+
+
+
+    // -------- STOP IT ALL  ----------------------------------
+
+    $('.element').hover(function() {
+        $(this).stop().animate({left:"50px"}, "slow");
+    }, function() {
+        $(this).stop().animate({left:"0px"}, "slow");
+    })
 
 
 
