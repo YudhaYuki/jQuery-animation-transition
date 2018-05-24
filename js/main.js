@@ -61,14 +61,43 @@ $(document).ready(function() {
     });
     */
 
-
+    /*
     $('.fadeIn, .fadeOut').click(function() {
         $('.element').fadeToggle(2000, function() {
             console.log('Transition Complete !')
         })
     })
+    */
 
 
+
+
+
+
+
+
+    // -------- SLIDE DOWN AND SLIDE UP ----------------------------------
+
+    /*
+    $('.slideUp').click(function() {
+        $('.element').slideUp(2000, function() {
+            console.log('Transition done !');
+        });
+    })
+
+    $('.slideDown').click(function() {
+        $('.element').slideDown(2000, function() {
+            console.log('Transition done !');
+        });
+    })
+    */
+
+
+   $('.slideDown, .slideUp').click(function() {
+    $('.element').slideToggle(2000, function() {
+        console.log('Transition done !');
+    });
+})
 
 
 
