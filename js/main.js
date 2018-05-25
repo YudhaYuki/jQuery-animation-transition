@@ -133,12 +133,27 @@ $(document).ready(function() {
 
     // -------- STOP IT ALL  ----------------------------------
 
+    /*
     $('.element').hover(function() {
         $(this).stop().animate({left:"50px"}, "slow");
     }, function() {
         $(this).stop().animate({left:"0px"}, "slow");
     })
+    */
 
+
+
+
+
+
+
+    // -------- TIMING ANIMATION  ----------------------------------
+    $('.square.one').animate({marginLeft:"+=100"}, 1000, function() {
+        $('.square.two').animate({marginLeft:"+=100"}, 1000, function() {
+            $('.square.three').animate({marginLeft:"+=100"}, 1000)
+        })
+    
+    })
 
 
 });
