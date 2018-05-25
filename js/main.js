@@ -148,12 +148,33 @@ $(document).ready(function() {
 
 
     // -------- TIMING ANIMATION  ----------------------------------
+    /*
     $('.square.one').animate({marginLeft:"+=100"}, 1000, function() {
         $('.square.two').animate({marginLeft:"+=100"}, 1000, function() {
             $('.square.three').animate({marginLeft:"+=100"}, 1000)
         })
-    
     })
+    */
+
+
+
+
+
+
+
+
+    // -------- TIMING ANIMATION 2  ----------------------------------
+    /*
+    $('.square.one').animate({marginLeft:"+=100"}, 1000);
+    $('.square.two').delay(200).animate({marginLeft:"+=100"}, 1000);
+    $('.square.three').delay(1000).animate({marginLeft:"+=100"}, 1000);
+    */
+
+    $('.square.one').animate({marginLeft:"+=100"}, 1000, function() {
+        
+        $('.square.two').delay(200).animate({marginLeft:"+=100"}, 1000);
+        $('.square.three').delay(1000).animate({marginLeft:"+=100"}, 1000);
+    });
 
 
 });
